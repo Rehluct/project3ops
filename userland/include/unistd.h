@@ -104,7 +104,7 @@
  * This file is *not* shared with the kernel, even though in a sense
  * the kernel needs to know about these prototypes. This is because,
  * due to error handling concerns, the in-kernel versions of these
- * functions will usually have slightly different signatures.
+ * functions will usually have slightly differenccct signatures.
  */
 
 
@@ -122,6 +122,7 @@ int open(const char *filename, int flags, ...);
 ssize_t read(int filehandle, void *buf, size_t size);
 ssize_t write(int filehandle, const void *buf, size_t size);
 int close(int filehandle);
+int meld(const char *filename1, const char *filename2, const char *meldfilename);
 int reboot(int code);
 int sync(void);
 /* mkdir - see sys/stat.h */
