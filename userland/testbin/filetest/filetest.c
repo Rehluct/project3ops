@@ -43,8 +43,7 @@
 #include <unistd.h>
 #include <err.h>
 
-int
-main(int argc, char *argv[])
+int main(int argc, char *argv[])
 {
 	static char writebuf[40] = "Twiddle dee dee, Twiddle dum dum.......\n";
 	static char readbuf[41];
